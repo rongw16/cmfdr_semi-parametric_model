@@ -14,7 +14,7 @@ source("LFDR_CMBsplines.R")
 X=data.matrix(X);
 N=length(Z)
 
-#For test run, take small iterations, such as nIter=1100, burnIn=100, thin=5, etc.
+#For test run, take smaller iterations.
 thin=10;
 nIter=18000;
 burnIn=4000;

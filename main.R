@@ -4,17 +4,17 @@
 ################################################
 
 getwd()
-setwd("/Users/rongzablocki/Desktop/upload.code") #put code in certain directory
+setwd("/home/yourFolder") #put code in certain directory
 
 rm(list=ls())
  
-load("toyData.RData") #Only information needed is X and Z (others can be ignored)
+load("toyData.RData") #Only information needed from the data is X and Z (others can be ignored)
 
 source("LFDR_CMBsplines.R")
 X=data.matrix(X);
 N=length(Z)
 
-
+#For test run, take small iterations, such as nIter=1100, burnIn=100, thin=5, etc.
 thin=10;
 nIter=18000;
 burnIn=4000;
